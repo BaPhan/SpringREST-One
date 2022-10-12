@@ -1,11 +1,9 @@
-package com.springrestone.dto;
+package com.springrestone.ultil.request;
 
 import com.springrestone.entity.Post;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
@@ -14,6 +12,7 @@ public class CommentDTO {
     private String name;
     private String email;
     private String body;
-    private Post post;
+    //private Post post;
+    private Long postId;
 }
 
